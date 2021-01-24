@@ -1,5 +1,6 @@
 /*
- * Problem statement: Remove all duplicate characters from the given string.
+ * Problem statement:
+ * Remove all duplicate characters from the given string.
  */
 
 public class Solution1M
@@ -26,11 +27,12 @@ public class Solution1M
     }
 }
 
-/* Testcases:
-
-T1: inputString = "Hello World"      --> "Helo Wrd"
-T2: inputString = "   Megaa mind"    --> " Megaind"
-T3: inputString = ""                 --> null
-T4: inputString = "  qwerrrty122242" --> " qwerty124"
-T5: inputString = null               --> null
-*/
+/* 
+ * Testcases:
+ *
+ * T1: inputString = "Hello World"      --> "Helo Wrd"
+ * T2: inputString = "   Megaa mind"    --> " Megaind"
+ * T3: inputString = ""                 --> null
+ * T4: inputString = "  qwerrrty122242" --> " qwerty124"
+ * T5: inputString = null               --> null
+ */

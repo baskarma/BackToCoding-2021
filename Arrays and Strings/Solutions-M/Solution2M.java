@@ -1,4 +1,5 @@
 /* 
+ * Problem Statement:
  * Identify if the given string is a palindrome. 
  */
 
@@ -14,12 +15,12 @@ public class Solution2M
 }
 
 /*
-Testcases:
-
-T1: inputString = "madam"           --> true
-T2: inputString = ""                --> false
-T3: inputString = " yythtyy "       --> true
-T4: inputString = null              --> false
-T5: inputString = "hodoh h odoh"    --> false
-T6: inputString = "Aas bb c bb saa" --> true
-*/
+ * Testcases:
+ *
+ * T1: inputString = "madam"           --> true
+ * T2: inputString = ""                --> false
+ * T3: inputString = " yythtyy "       --> true
+ * T4: inputString = null              --> false
+ * T5: inputString = "hodoh h odoh"    --> false
+ * T6: inputString = "Aas bb c bb saa" --> true
+ */

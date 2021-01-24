@@ -1,5 +1,4 @@
-
-/*
+/* Problem Statement:
  * Given two string, identify if they are anagrams of each other.
  * Anagram is a word formed by rearranging the letters of another typically using all letters only once.
  * 
@@ -32,11 +31,11 @@ public class Solution3M
 }
 
 /*
-Testcases:
+ * Testcases:
 
-T1: inputStrings = {"Quidditch", "Tiddquich"} --> true
-T2: inputStrings = {"", ""}                   --> false
-T3: inputStrings = {"qwerty12", "123efr"}     --> false
-T4: inputStrings = {"hello", null}            --> false
-T5: inputStrings = {"Wizard", "Darwiz"}       --> true
-*/
+ * T1: inputStrings = {"Quidditch", "Tiddquich"} --> true
+ * T2: inputStrings = {"", ""}                   --> false
+ * T3: inputStrings = {"qwerty12", "123efr"}     --> false
+ * T4: inputStrings = {"hello", null}            --> false
+ * T5: inputStrings = {"Wizard", "Darwiz"}       --> true
+ */
