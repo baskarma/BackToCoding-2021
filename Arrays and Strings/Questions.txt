@@ -1,0 +1,34 @@
+1. Remove all the duplicate characters from the given string.
+
+2. Identify if the given string is a palindrome. 
+
+3. Given two string, identify if they are anagrams of each other.
+
+4.(Source : CTCI) 
+    a. Implement an algorithm to determine if a string has all unique characters. 
+    b.What if you cannot use additional data structures?
+
+5.(Source : CTCI)
+    Write a method to replace all spaces in a string with'%20'. You may assume that the string has sufficient space at the end of the string to hold the additional characters, and that you are given the "true" length of the string. 
+    (Note: for Java, please use a character array so that you can perform this operation in place.)
+    EXAMPLE
+    Input: "Mr John Smith" Output: "Mr%20Dohn%20Smith"
+
+6. (Source : CTCI)
+    Implement a method to perform basic string compression using the counts of repeated characters. For example, the string aabcccccaaa would become a2blc5a3. If the "compressed" string would not become smaller than the original string, your method should return the original string.
+
+7. (Source : CTCI)
+    a.Given an image represented by an NxN matrix, where each pixel in the image is 4 bytes, write a method to rotate the image by 90 degrees. 
+    b.Can you do this in place?
+
+8. (Source : CTCI)
+    Write an algorithm such that if an element in an MxN matrix is 0, its entire row and column are set to 0.
+
+9. (Source : CTCI)
+    Assume you have a method isSubstring which checks if one word is a substring of another. Given two strings, s i and s2, write code to check if s2 is a rotation of si using only one call to isSubstring (e.g.,"waterbottle"is a rota- tion of"erbottlewat").
+
+10. (Source : LeetCode - Easy)
+    Given an integer, write a function to return its roman numeral representation.
+
+11. (Source : LeetCode - Easy)
+    Given two integers, an hour and a minute, write a function to calculate the angle between the two hands on a clock representing that time.
