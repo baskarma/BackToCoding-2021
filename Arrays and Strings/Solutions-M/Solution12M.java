@@ -18,10 +18,10 @@ import java.util.List;
 import java.util.Arrays;
 
 public class Solution12M {
-    public static void main(String args[]){
-        int numRows = 1;
-        System.out.println(GeneratePascalTriangle(numRows));
-    }
+    //public static void main(String args[]){
+    //    int numRows = 1;
+    //    System.out.println(GeneratePascalTriangle(numRows));
+    //}
 
     public static List<List<Integer>> GeneratePascalTriangle(int numRows) {
         List<List<Integer>> pTriangle = new ArrayList<List<Integer>>();
