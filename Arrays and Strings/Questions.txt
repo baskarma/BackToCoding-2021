@@ -32,3 +32,14 @@
 
 11. (Source : LeetCode - Easy)
     Given two integers, an hour and a minute, write a function to calculate the angle between the two hands on a clock representing that time.
+
+12. (Source : LeetCode)
+    Given a non-negative integer numRows, generate the first numRows of Pascal's triangle.
+    In Pascal's Triangle, each number is the sum of the two numbers directly above it.
+
+13. (Source : LeetCode)
+    In a given integer array nums, there is always exactly one largest element.
+    Find whether the largest element in the array is at least twice as much as every other number in the array.
+    If it is, return the index of the largest element, otherwise return -1.
+
+
