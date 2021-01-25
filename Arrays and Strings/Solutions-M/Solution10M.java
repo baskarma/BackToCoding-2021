@@ -1,13 +1,12 @@
-
 /*
-Question:
-Given an integer, write a function to return its roman numeral representation.
-Note: The largest number you can write in Roman numerals is 3,999.
-Example:
-integerToRoman(1)  = "I"
-integerToRoman(4)  = "IV"
-integerToRoman(49) = "XLIX"
-*/
+ * :
+ * Given an integer, write a function to return its roman numeral representation.
+ * Note: The largest number you can write in Roman numerals is 3,999.
+ * Example:
+ * integerToRoman(1)  = "I"
+ * integerToRoman(4)  = "IV"
+ * integerToRoman(49) = "XLIX"
+ */
 
 public class Solution10M{
     private static final String[] romanValues = new String[]{"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", 
@@ -31,16 +30,15 @@ public class Solution10M{
             else
                 i++;
         }
-
         return sb.toString();
     }
 }
 
 /*
-Testcases:
-
-T1: num = 0     --> Invalid integer value!
-T2: num = -1    --> Invalid integer value!
-T3: num = 13    --> XIII
-T4: num = 3362  --> MMMCCCLXII
-*/
+ * Testcases:
+ * 
+ * T1: num = 0     --> Invalid integer value!
+ * T2: num = -1    --> Invalid integer value!
+ * T3: num = 13    --> XIII
+ * T4: num = 3362  --> MMMCCCLXII
+ */
