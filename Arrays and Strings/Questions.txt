@@ -15,7 +15,7 @@
     Input: "Mr John Smith" Output: "Mr%20Dohn%20Smith"
 
 6. (Source : CTCI)
-    Implement a method to perform basic string compression using the counts of repeated characters. For example, the string aabcccccaaa would become a2blc5a3. If the "compressed" string would not become smaller than the original string, your method should return the original string.
+    Implement a method to perform basic string compression using the counts of repeated characters. For example, the string aabcccccaaa would become a2b1c5a3. If the "compressed" string would not become smaller than the original string, your method should return the original string.
 
 7. (Source : CTCI)
     a.Given an image represented by an NxN matrix, where each pixel in the image is 4 bytes, write a method to rotate the image by 90 degrees. 
@@ -44,6 +44,13 @@
 
 14. (Source : LeetCode)
     Given a matrix of M x N elements (M rows, N columns), return all elements of the matrix in diagonal order as shown in the result.
+
+15. (Source : CTCI)
+    Given two strings, write a method to decide if one is a permutation of the other.
+
+16. (Source : CTCI)
+    There are three types of edits that can be performed on strings : insert, remove or replace a character.
+    Given two strings, write a function to check if they are one edit( or zero edits) away.
 
 
 
