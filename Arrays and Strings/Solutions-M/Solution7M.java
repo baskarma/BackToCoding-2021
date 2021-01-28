@@ -5,7 +5,7 @@
  */
 public class Solution7M {
     public static void main(String[] args){
-        int[][] matrix = {{1,1,1,1},{2,2,2,2},{3,3,3,3}};
+        int[][] matrix = {{1,1,1},{2,2,2},{3,3,3}};
 
         if(matrix.length != matrix[0].length || matrix.length == 0 || matrix == null)
         {
@@ -15,9 +15,9 @@ public class Solution7M {
         {
             System.out.println("Original : ");
             PrintMatrix(matrix);
-            System.out.println("Rotated Matrix : ");
+            System.out.println("\nRotated Matrix : ");
             PrintMatrix(RotateMatrix(matrix, matrix.length));
-            System.out.println("Rotated In Place Matrix");
+            System.out.println("\nRotated In Place Matrix : ");
             PrintMatrix(RotateMatrixInPlace(matrix, matrix.length));          
         }
     }
@@ -71,3 +71,27 @@ public class Solution7M {
         return matrix;
     }
 }
+
+/*
+ * Testcases:
+ * 
+ * T1: matrix = {{}} --> Invalid Matrix!
+ * T2: matrix = {{1,1,1,1},{2,2,2,2},{3,3,3,3}} --> Invalid Matrix!
+ * T3: matrix = {{1,1,1},{2,2,2},{3,3,3}}
+ * -->
+ * Original : 
+ * 
+ * 1 1 1 
+ * 2 2 2 
+ * 3 3 3 
+ * Rotated Matrix : 
+ * 
+ * 3 2 1 
+ * 3 2 1 
+ * 3 2 1 
+ * Rotated In Place Matrix :
+ * 
+ * 3 2 1 
+ * 3 2 1 
+ * 3 2 1
+ */
