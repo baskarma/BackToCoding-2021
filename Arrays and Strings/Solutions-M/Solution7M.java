@@ -6,12 +6,22 @@
 public class Solution7M {
     public static void main(String[] args){
         int[][] matrix = {{1,1,1,1},{2,2,2,2},{3,3,3,3}};
-        int[][] rotatedMatrix = RotateMatrix(matrix, matrix.length);
-        int[][] rotatedInPlaceMatrix = RotateMatrixInPlace(matrix, matrix.length);
-        PrintMatrix(rotatedMatrix);
-        System.out.println();
-        PrintMatrix(rotatedInPlaceMatrix);
+
+        if(matrix.length != matrix[0].length || matrix.length == 0 || matrix == null)
+        {
+            System.out.println("Invalid Matrix!");
+        }
+        else
+        {
+            System.out.println("Original : ");
+            PrintMatrix(matrix);
+            System.out.println("Rotated Matrix : ");
+            PrintMatrix(RotateMatrix(matrix, matrix.length));
+            System.out.println("Rotated In Place Matrix");
+            PrintMatrix(RotateMatrixInPlace(matrix, matrix.length));          
+        }
     }
+
     //print the matrix
     private static void PrintMatrix(int[][] matrix){
         for(int i = 0 ; i < matrix.length; i++){
@@ -24,9 +34,6 @@ public class Solution7M {
     
     //Rotate Matrix using new Matrix
     private static int[][] RotateMatrix(int[][] matrix, int n){
-        if(matrix.length != matrix[0].length || matrix == null)
-            return matrix;
-        
         int[][] rotatedMatrix = new int[n][n];
         for(int i = 0 ; i < n; i++){
             int k = n - 1;
@@ -40,9 +47,6 @@ public class Solution7M {
 
     //Rotate Matrix in place by swapping values
     private static int[][] RotateMatrixInPlace(int[][] matrix, int n){
-        if(matrix.length != matrix[0].length)
-            return matrix;
-
         for(int i = 0; i < n/2; i++)
         {
             //stepping from outside to inside of the matrix
