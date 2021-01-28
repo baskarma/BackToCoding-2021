@@ -25,7 +25,7 @@
     Write an algorithm such that if an element in an MxN matrix is 0, its entire row and column are set to 0.
 
 9. (Source : CTCI)
-    Assume you have a method isSubstring which checks if one word is a substring of another. Given two strings, s i and s2, write code to check if s2 is a rotation of si using only one call to isSubstring (e.g.,"waterbottle"is a rota- tion of"erbottlewat").
+    Assume you have a method isSubstring which checks if one word is a substring of another. Given two strings, s i and s2, write code to check if s2 is a rotation of s1 using only one call to isSubstring (e.g.,"waterbottle"is a rota- tion of"erbottlewat").
 
 10. (Source : LeetCode - Easy)
     Given an integer, write a function to return its roman numeral representation.
@@ -51,6 +51,10 @@
 16. (Source : CTCI)
     There are three types of edits that can be performed on strings : insert, remove or replace a character.
     Given two strings, write a function to check if they are one edit( or zero edits) away.
+
+17. (Source : LeetCode - Easy)
+    Given two binary strings, return their sum (also a binary string).
+    The input strings are both non-empty and contains only characters 1 or 0.
 
 
 
