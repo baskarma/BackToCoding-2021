@@ -7,6 +7,9 @@
 
 public class Solution6M {
 
+    public static void main(String[] args){
+        System.out.println(CompressString("12qwereeeqwsdfg"));
+    }
     private static String CompressString(String input){
         if(input.isEmpty() || input == null)
             return null;
@@ -24,7 +27,10 @@ public class Solution6M {
                 charCount = 1;
             }
         }
-        return sb.toString();
+        if(sb.length() >= input.length())
+            return input;
+        else
+            return sb.toString();
     }
 }
 
@@ -34,5 +40,5 @@ public class Solution6M {
  * T1: input = "aabccccaaa" --> "a2b1c4a3"
  * T2: input = "   " --> " 3"
  * T3: input = "" --> null
- * T4: input = "1111ffrgyhst" --> "14f2r1g1y1h1s1t1"
+ * T4: input = "1111ffrgyhst" --> "1111ffrgyhst"
  */
