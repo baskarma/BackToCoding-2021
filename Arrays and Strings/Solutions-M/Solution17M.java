@@ -38,3 +38,10 @@ public class Solution17M {
     }
 }
 
+/*
+ * Testcases:
+ * 
+ * T1: input = "11", "1" --> "100"
+ * T2: input = "1001", "1010" --> "10011"
+ * T2: input = "", "1111" --> null
+ */
