@@ -4,16 +4,9 @@
  */
 
 public class Solution8M {
-    public static void main(String[] args){
-        int[][] matrix = {{1,0,5,2}, {2,2,4,4}, {1,4,5,0}};
-        int m = matrix.length;
-        int n = matrix[0].length;
-        PrintMatrix("Original :", matrix);
-        PrintMatrix("Modified :", CheckMatrixForZeroAndReplaceRowColumns(matrix, m, n));
-    }
 
     private static void PrintMatrix(String msg, int[][] matrix) {
-        System.out.println(msg);
+        System.out.print(msg);
         for(int i = 0; i < matrix.length; i++){
             System.out.println();
             for(int j = 0; j < matrix[0].length; j++){
@@ -59,3 +52,42 @@ public class Solution8M {
         }
     }
 }
+
+/* 
+ * Testcases : 
+ * 
+ * T1: input = {{1,0},{2,2}} -->
+ * Original :
+ * 1 0 
+ * 2 2
+ * Modified :
+ * 0 0 
+ * 2 0 
+ * 
+ * T2: input = {{1,0,5,2}, {2,2,4,4}, {1,4,5,0}} -->
+ * Original :
+ * 1 0 5 2 
+ * 2 2 4 4 
+ * 1 4 5 0
+ * Modified :
+ * 0 0 0 0 
+ * 2 0 4 0 
+ * 0 0 0 0
+ * 
+ * T3: input = {{1,0,5,2}}
+ * Original :
+ * 1 0 5 2 
+ * Modified :
+ * 0 0 0 0
+ * 
+ * T4: input = {{}}
+ * Original :
+ * 
+ * Modified :
+ * 
+ * T5: input = {{1}}
+ * Original :
+ * 1
+ * Modified :
+ * 1
+ */
