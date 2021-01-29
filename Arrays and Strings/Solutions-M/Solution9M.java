@@ -7,12 +7,6 @@
  */
 
 public class Solution9M {
-    public static void main(String[] args){
-        System.out.println(IsRotation("wizard","zardwiz"));
-        System.out.println(IsRotation("wizard",""));
-        System.out.println(IsRotation(null,"zardwiz"));
-        System.out.println(IsRotation("waterbottle","erBottlEwat"));
-    }
 
     private static boolean IsRotation(String s1, String s2){
         if(s1 == null || s2 == null || s1.length() != s2.length())
@@ -26,3 +20,13 @@ public class Solution9M {
         return s1New.contains(s2);
 	}
 }
+
+/* 
+ * Testcases:
+ * 
+ * T1: input = ("wizard","zardwiz") --> false
+ * T2: input = ("wizard","") --> false
+ * T3: input = (null,"zardwiz") --> false
+ * T4: input = ("waterbottle","erBottlEwat") --> true
+ * 
+ */
