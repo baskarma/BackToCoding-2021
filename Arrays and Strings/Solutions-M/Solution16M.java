@@ -3,7 +3,7 @@
  * Given two binary strings, return their sum (also a binary string).
  * The input strings are both non-empty and contains only characters 1 or 0. 
  */
-public class Solution17M {
+public class Solution16M {
     public static void main(String args[]){
         System.out.println(addBinary("", "1010"));
     }
