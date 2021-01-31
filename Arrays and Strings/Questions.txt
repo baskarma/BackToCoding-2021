@@ -46,13 +46,10 @@
     Given a matrix of M x N elements (M rows, N columns), return all elements of the matrix in diagonal order as shown in the result.
 
 15. (Source : CTCI)
-    Given two strings, write a method to decide if one is a permutation of the other.
-
-16. (Source : CTCI)
     There are three types of edits that can be performed on strings : insert, remove or replace a character.
     Given two strings, write a function to check if they are one edit( or zero edits) away.
 
-17. (Source : LeetCode - Easy)
+16. (Source : LeetCode - Easy)
     Given two binary strings, return their sum (also a binary string).
     The input strings are both non-empty and contains only characters 1 or 0.
 
