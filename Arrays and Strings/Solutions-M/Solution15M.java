@@ -8,10 +8,58 @@
  */
 public class Solution15M {
    public static void main(String[] args){
-
+      System.out.println(isOneEditAway("pale", "bale"));
+      System.out.println(isOneEditAway("gain", "gail"));
+      System.out.println(isOneEditAway("poise", "pose"));
    } 
 
    private static boolean isOneEditAway(String s1, String s2){
-       
+      boolean val = false;
+      if(s1 == null || s2 == null)
+         return val;
+      
+      if(s1.length() == s2.length())
+         val = Replace(s1, s2);
+
+      if((s1.length() - 1 == s2.length()) || (s1.length() + 1 == s2.length()))
+         val = InsertOrRemove(s1, s2);
+      
+      return val;
+   }
+
+   private static boolean Replace(String s1, String s2) {
+      int diffCount = 0;
+      for(int i = 0; i < s1.length(); i++){
+         if(s1.charAt(i) != s2.charAt(i))
+            diffCount++;
+      }
+      if(diffCount == 1)
+         return true;
+      else
+         return false;
+   }
+
+   private static boolean InsertOrRemove(String s1, String s2) {
+      if(Math.abs(s1.length() - s2.length()) > 1)
+         return false;
+      
+      String first = s1.length() > s2.length() ? s1 : s2;
+      String second = s1.length() < s2.length() ? s1 : s2;
+
+      int i = 0;
+      int j = 0;
+      while(i < first.length() && j < second.length()){
+         if(first.charAt(i) != second.charAt(j)){
+            if(i != j)
+               return false;
+            i++;
+         }
+         else
+         {
+               i++;
+               j++;
+         }
+      }
+      return true;
    }
 }
