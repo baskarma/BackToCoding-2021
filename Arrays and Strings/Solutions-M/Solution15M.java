@@ -7,12 +7,7 @@
  * Given two strings, write a function to check if they are one edit( or zero edits) away.
  */
 public class Solution15M {
-   public static void main(String[] args){
-      System.out.println(isOneEditAway("pale", "bale"));
-      System.out.println(isOneEditAway("gain", "gail"));
-      System.out.println(isOneEditAway("poise", "pose"));
-   } 
-
+   
    private static boolean isOneEditAway(String s1, String s2){
       boolean val = false;
       if(s1 == null || s2 == null)
@@ -63,3 +58,15 @@ public class Solution15M {
       return true;
    }
 }
+
+/* 
+ * Testcases : 
+ * 
+ * T1 : input = ("pale", "bale") --> true
+ * T2 : input = ("gain", "gail") --> true
+ * T3 : input = ("pose", "poise") --> true
+ * T4 : input = (null, "still") --> false
+ * T5 : input = ("Ball", "bale") --> false //case-sensitive
+ * T6 : input = ("dog ", "god") --> false //white-space sensitive
+ *
+ */
