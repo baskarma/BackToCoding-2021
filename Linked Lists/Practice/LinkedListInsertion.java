@@ -23,7 +23,7 @@ public class LinkedListInsertion {
     public void printList(){
         Node n = head;
 
-        while(n.next != null){
+        while(n != null){
             System.out.print(n.data + " ");
             n = n.next;
         }
@@ -69,6 +69,14 @@ public class LinkedListInsertion {
     }
 
     public static void main(String[] args){
-        
+
+        LinkedListInsertion list1 = new LinkedListInsertion();
+        list1.appendNode(5);
+        list1.pushNode(10);
+        list1.pushNode(15);
+        list1.pushNode(25);
+        list1.insertAfter(20, list1.head);
+
+        list1.printList();
     }
 }
