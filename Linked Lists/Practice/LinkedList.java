@@ -1,5 +1,6 @@
 /* 
  * Create a simple linked list with 3 nodes. 
+ * Now traverse the created list and print the data of each node.
  */
 
 public class LinkedList {
@@ -15,6 +16,15 @@ public class LinkedList {
         }
     }
 
+    public void printList(){
+        Node n = head;
+
+        while(n != null){
+            System.out.println(n.data + " ");
+            n = n.next;
+        }
+    }
+
     public static void main(String[] args){
         LinkedList list1 = new LinkedList();
 
@@ -25,5 +35,6 @@ public class LinkedList {
         list1.head.next = two;
         two.next = three;
 
+        list1.printList();
     }
 }
