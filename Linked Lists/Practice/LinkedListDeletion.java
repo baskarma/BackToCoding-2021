@@ -1,5 +1,6 @@
 /* 
  * Given a ‘key’, delete the first occurrence of this key in the linked list.
+ * Delete a Linked List node at a given position.
  */
 
 public class LinkedListDeletion {
@@ -43,6 +44,27 @@ public class LinkedListDeletion {
         prev.next = n.next;
     }
 
+    public void deleteNodeAt(int pos){
+        if(head == null)
+            return;
+        
+        Node n = head;
+        if(pos == 0){
+            head = n.next;
+            return;
+        }
+
+        for(int i = 0; n != null && i < pos - 1; i++){
+            n = n.next;
+        }
+
+        if(n == null || n.next == null)
+            return;
+        
+        Node next = n.next.next;
+        n.next = next;
+    }
+
     public void pushNode(int newData){
         Node newNode = new Node(newData);
         
@@ -84,13 +106,18 @@ public class LinkedListDeletion {
         list1.appendNode(10);
         list1.pushNode(2);
         list1.insertAfter(20, list1.head);
+        list1.appendNode(15);
+        list1.insertAfter(3, list1.head.next.next);
 
         System.out.println("Original Linked List : ");
         list1.printList();
 
         list1.deleteNode(1);
-        System.out.println("\nDeleted Linked List : ");
+        System.out.println("\nDelete By Key From Linked List : ");
         list1.printList();
 
+        list1.deleteNodeAt(3);
+        System.out.println("\nDelete At position From Linked List : ");
+        list1.printList();
     }
 }
