@@ -76,4 +76,21 @@ public class LinkedListDeletion {
         newNode.next = prevNode.next;
         prevNode.next = newNode;
     }
+
+    public static void main(String[] args){
+        LinkedListDeletion list1 = new LinkedListDeletion();
+
+        list1.appendNode(1);
+        list1.appendNode(10);
+        list1.pushNode(2);
+        list1.insertAfter(20, list1.head);
+
+        System.out.println("Original Linked List : ");
+        list1.printList();
+
+        list1.deleteNode(1);
+        System.out.println("\nDeleted Linked List : ");
+        list1.printList();
+
+    }
 }
