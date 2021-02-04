@@ -1,3 +1,4 @@
+package Practice;
 /* 
  * Create a simple linked list with 3 nodes. 
  * Now traverse the created list and print the data of each node.

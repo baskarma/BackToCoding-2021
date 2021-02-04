@@ -1,3 +1,4 @@
+package Practice;
 /* 
  * Given a ‘key’, delete the first occurrence of this key in the linked list.
  * Delete a Linked List node at a given position.
