@@ -37,7 +37,10 @@ public class LinkedList2M {
         Node pReference = head;
 
         for(int i = 0; i < k; i++){
-            pReference = pReference.next;
+            if(pReference.next != null)
+                pReference = pReference.next;
+            else
+                return -1;
         }
 
         while(pReference != null){
@@ -58,7 +61,15 @@ public class LinkedList2M {
 
         System.out.println("List : ");
         list.printList();
-        int k = 2;
-        System.out.println("The value of the kth (" + k +") node from end is : " + list.GetKthFromEnd(k));
+        int k = 4;
+        System.out.println("\nThe value of the kth (" + k +") node from end is : " + list.GetKthFromEnd(k));
     }
 }
+
+/*
+ * Testcases :
+ * 
+ * T1: input: 11->9->7->5->3->1  k = 2   The value of the kth (2) node from end is : 3
+ * T2: input: 11->9->7->5->3->1  k = 10  The value of the kth (12) node from end is : -1
+ * T3: input: 11->9->7->5->3->1  k = 4  The value of the kth (12) node from end is : 7
+ */
