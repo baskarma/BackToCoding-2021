@@ -1,3 +1,4 @@
+package Practice;
 /* 
  * Insert a new node into a linked list by the following:
  * 1) At the front of the linked list
