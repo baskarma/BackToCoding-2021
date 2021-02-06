@@ -59,17 +59,33 @@ public class LinkedList1M {
         list.push(2);
         list.push(3);
         list.push(1);
-        list.push(4);
         list.push(2);
-        list.push(5);
-        list.push(6);
+        list.push(3);
         list.push(1);
+        list.push(2);
+        list.push(3);
 
-        System.out.println("Initial Linked List : ");
+        System.out.print("Initial Linked List : ");
         list.printList();
-
-        System.out.println("After Removing Duplicates : ");
+        System.out.println();
+        System.out.print("After Removing Duplicates : ");
         list.removeDuplicates(list.head);
         list.printList();
     }
 }
+
+/* 
+ * Testcases:
+ * 
+ * T1 : 
+ * Initial Linked List : 1 6 5 2 4 1 3 2 1
+ * After Removing Duplicates : 1 6 5 2 4 3 
+ * 
+ * T2 : 
+ * Initial Linked List : 6 5 4 3 2 1 
+ * After Removing Duplicates : 6 5 4 3 2 1
+ * 
+ * T3:
+ * Initial Linked List : 3 2 1 3 2 1 3 2 1 
+ * After Removing Duplicates : 3 2 1 
+ */
