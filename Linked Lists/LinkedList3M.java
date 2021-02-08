@@ -46,16 +46,28 @@ public class LinkedList3M {
 
         list.push(1);
         list.push(2);
-        list.push(3);
-        list.push(4);
-        list.push(5);
+        list.push(1);
+        //list.push(4);
+        //list.push(5);
 
-        System.out.println("Original linked list : ");
+        System.out.print("Original linked list : ");
         list.printList();
 
         System.out.println();
-        System.out.println("After deletion : ");
-        list.deleteNode(list.head.next.next);
+        System.out.print("After deletion : ");
+        list.deleteNode(list.head.next);
         list.printList();
     }
 }
+
+/* 
+ * Testcases : 
+ * 
+ * T1 : input : 5->4->3->2->1
+ * Original linked list : 5 4 3 2 1 
+ * After deletion : 5 4 2 1 
+ * 
+ * T2 : input : 1->2->1
+ * Original linked list : 1 2 1 
+ * After deletion : 1 1 
+ */
