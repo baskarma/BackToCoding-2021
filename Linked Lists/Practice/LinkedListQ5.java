@@ -44,4 +44,29 @@ public class LinkedListQ5 {
         }
         return count;
     }
+
+    public static void main(String[] args){
+        LinkedListQ5 list = new LinkedListQ5();
+        list.push(1);
+        list.push(2);
+        list.push(3);
+        list.push(2);
+        list.push(1);
+        list.push(1);
+        list.push(2);
+        list.push(3);
+        list.push(1);
+
+        list.printList();
+        int key = 22;
+        System.out.println("Number of occurrences of " + key + " : " + list.countKeyOccurrence(key));
+    }
 }
+
+/*
+ * Testcases:
+ * 
+ * T1 : input = 1 3 2 1 1 2 3 2 1 Number of occurrences of 1 : 4
+ * T2 : input = 1 3 2 1 1 2 3 2 1 Number of occurrences of 2 : 3
+ * T3 : input = 1 3 2 1 1 2 3 2 1 Number of occurrences of 22 : 0
+ */
