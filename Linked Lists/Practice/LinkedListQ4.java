@@ -31,7 +31,7 @@ public class LinkedListQ4 {
         head = newNode;
     }
 
-    public int findMiddle(Node list){
+    public int findMiddle(){
         if(head == null)
             return -1;
         Node ptr1 = head;
@@ -43,5 +43,17 @@ public class LinkedListQ4 {
         }
 
         return ptr2.data;
+    }
+
+    public static void main(String[] args){
+        LinkedListQ4 list = new LinkedListQ4();
+        list.push(1);
+        list.push(2);
+        list.push(3);
+        list.push(14);
+        list.push(23);
+
+        list.printList();
+        System.out.println("Middle node is : " + list.findMiddle());
     }
 }
