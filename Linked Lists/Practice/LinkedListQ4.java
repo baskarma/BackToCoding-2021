@@ -57,3 +57,10 @@ public class LinkedListQ4 {
         System.out.println("Middle node is : " + list.findMiddle());
     }
 }
+
+/* 
+ * Testcases:
+ * 
+ * T1 : input = 14 3 2 1 Middle node is : 2
+ * T2 : input = 23 14 3 2 1 Middle node is : 3
+ */
