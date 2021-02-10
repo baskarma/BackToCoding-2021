@@ -35,7 +35,7 @@ public class LinkedListQ6 {
             return;
 
         Node current = head;
-        while(current != null){
+        while(current.next != null){
             int temp = current.data;
             current.data = current.next.data;
             current.next.data = temp;
@@ -44,4 +44,18 @@ public class LinkedListQ6 {
         }
     }
     
+    public static void main(String[] args){
+        LinkedListQ6 list = new LinkedListQ6();
+        list.push(6);
+        //list.push(5);
+        //list.push(4);
+        //list.push(3);
+        //list.push(2);
+        //list.push(1);
+
+        list.printList();
+        System.out.print(" Swapped list : " );
+        list.swapPairwise();
+        list.printList();
+    }
 }
