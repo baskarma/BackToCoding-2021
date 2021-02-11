@@ -24,14 +24,6 @@ public class LinkedListQ7 {
         head = newNode;
     }
 
-    public void printList(){
-        Node temp = head;
-        while(temp != null){
-            System.out.print(temp.data + " ");
-            temp = temp.next;
-        }
-    }
-
     public boolean detectLoop(){
         HashSet<Node> hs = new HashSet<Node>();
         Node temp = head;
@@ -45,6 +37,18 @@ public class LinkedListQ7 {
         return false;
     }
     public static void main(String[] args){
+        LinkedListQ7 list = new LinkedListQ7();
+        list.push(1);
+        list.push(2);
+        list.push(3);
+        list.push(4);
 
+        //Creating a loop - Result : Loop Found.
+        list.head.next.next.next.next = list.head;
+        
+        if(list.detectLoop())
+            System.out.println("Loop Found!");
+        else
+            System.out.println("No Loop Found :(");
     }
 }
