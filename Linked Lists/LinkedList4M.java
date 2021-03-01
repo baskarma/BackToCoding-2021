@@ -15,4 +15,18 @@ public class LinkedList4M {
             next = null;
         }
     }
+
+    public void push(int newData){
+        Node newNode = new Node(newData);
+        newNode.next = head;
+        head = newNode;
+    }
+
+    public void printList(){
+        Node temp = head;
+        while(temp != null){
+            System.out.print(temp.data + " ");
+            temp = temp.next;
+        }
+    }
 }
